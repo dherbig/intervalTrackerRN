@@ -1,16 +1,16 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import HomePage from './app/components/HomePage/HomePage'
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <HomePage />
-      </View>
-    );
-  }
-}
+import { StackNavigator } from 'react-navigation';
+
+import HomePage from './app/components/HomePage/HomePage';
+import CreatePage from './app/components/CreatePage/CreatePage';
+
+
+const App = StackNavigator({
+  Home: { screen: HomePage },
+  Create: { screen: CreatePage }
+});
 
 const styles = StyleSheet.create({
   container: {
@@ -18,3 +18,5 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
   },
 });
+
+export default App;

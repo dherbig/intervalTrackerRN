@@ -12,11 +12,14 @@ class Header extends Component {
 }
 
 const styles = StyleSheet.create({
+    // head styles
     head: {
         margin: 20
     },
+    // Text styles
     text: {
-        fontSize: 30
+        fontSize: 30,
+        color: 'blue'
     }
 });
 
