@@ -1,22 +1,20 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, View, Text, Button, Alert } from 'react-native';
 
 
-// Components
-import Header from '../Common/Header';
-import List from '../Common/List';
+const alertMessage = "This is your message"
 
-class HomePage extends Component {
+class ButtonComponent extends Component {
+    constructor() {
+        super();
+        this.state = {
 
-    static navigationOptions = {
-        title: 'Home',
-    };
+        }
+    }
     render() {
         const { navigate } = this.props.navigation;
         return (
             <View>
-                <Header />
-                <List />
                 <Button
                     title="Create New Workout"
                     color="violet"
@@ -26,5 +24,4 @@ class HomePage extends Component {
         )
     }
 }
-
-export default HomePage;
+export default ButtonComponent;

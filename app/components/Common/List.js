@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
+// Components
+import InOutBox from '../InOutBox/InOutBox';
+
+
 class List extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <Text>List</Text>
+
             </View>
         )
     }
@@ -18,7 +22,6 @@ const styles = StyleSheet.create({
         borderColor: '#d6d7da',
         margin: 20
     },
-
 });
 
 export default List
